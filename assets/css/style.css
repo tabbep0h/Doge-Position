@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: 0;
+}
+.container{
+    width:1020px;
+    margin:0 auto
+}   
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+body{
+    font-family: 'Roboto';
+}
+.btn{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F2726F;
+    border-radius: 4px;
+    padding:9px 34px;
+}
+.subtitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+}
+.subtitle::before{
+    content:'';
+    background:url('../img/Overline\ Mark.png') no-repeat center center / cover;
+    display: block;
+    width: 25px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+/*First*/
+.first{
+    background: url('../img/duotonebg-main.jpg') no-repeat center center / cover;
+}
+.header{}
+.header__before{
+    margin-bottom: 27px;
+    padding-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{}
+.header__elements{
+    display: flex;
+}
+.header__columns{
+    display: flex;
+}
+.header__columns:not(:last-of-type){
+    margin-right: 30px;
+}
+.header__icon{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+img{
+    width: 100%;
+}
+.header__text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0.15px;
+}
+.header__main{
+    display: flex;
+    background: #FFFFFF;
+    padding: 10px 40px;
+    border-radius:10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 126px;
+}
+.menu__list{
+    display: flex;
+}
+.menu__link{
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    margin-right: 37px;
+    display: flex;
+    align-items: center;
+}
+.menu__link__arrow::after{
+    position: relative;
+    content:'';
+    background: url('../img/expand_more_24px.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    top:10px;
+    left:5px;
+}
+.header__icons{
+    display: flex;
+}
+.header__search{
+    margin-right: 22px;
+    width: 24px;
+    height: 24px;
+}
+.header__cart{
+    width:24px;
+    height:24px
+}
+.intro{}
+.intro__title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.intro__btn{
+    margin-top: 48px;
+    width: 211px;
+}
+.intro{
+    padding:126px 0 312px 0;
+}
+.intro__title{}
+/*Second*/
+.second{
+    margin-bottom: 100px;
+}
+.second__block{
+    position: relative;
+    top:-88px;
+    background:#5D62B5; 
+    border-radius:40px;
+    padding: 100px 87px 0 87px;
+}
+.second__block::after{
+    position: absolute;
+    top: -100px;
+    right:-70px;
+    content: '';
+    background: url('../img/Stylize\ Circles.png') no-repeat center center;
+    display: block;
+    width: 200px;
+    height:317px;
+}  
+.second__title{
+    margin-top: 33px;
+    margin-bottom: 36px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    max-width: 583px;
+}
+.second__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F5F5F5;
+    margin-bottom: -65px;
+}
+.second__img{
+    position: relative;
+    z-index:1;
+    position: relative;
+    bottom: -120px;
+    width:845px;
+    height:420px;
+}
+.second__img img{
+    border-radius: 40px;
+}
+.second__img::before{
+    position: absolute;
+    top:-50px;
+    left:-45px;
+    z-index: -2;
+    content: '';
+    background:url('../img/Blob\ 2.png');    
+    width: 553px;
+    height: 371px;
+}
+/*Third*/
+.third{
+    height: 500px;
+    padding-top: 122px;
+    background: #29C3BE;
+    position: relative;
+}
+.third__wrap{
+    display: flex;
+}
+.third__img{
+}
+.third__pup{
+    bottom: 0px;
+    left: -120px;
+    width: 744px;
+    height: 456px;
+    position: relative;
+    z-index: 2;
+    top: 45px;
+}
+
+.third__block{
+    margin-left: -100px;
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+.third__title{
+    margin-top: 100px;
+    color:#FFFFFF;
+    font-weight: 900;
+    
+}
+.third__btn{
+    margin-top: 60px;
+    width:143px
+}
+
+.third::after{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    background: url('../img/Circles.svg') no-repeat center center;
+    display: block;
+    height: 317px;
+    width: 236px;
+    top: 170px;
+}
+.third::before{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    background: url('../img/second_blob.png') no-repeat center center;
+    display: block;
+    height: 349px;
+    width: 473px;
+    left: -53px;
+    top: -56px;
+
+}
+.third__block::after{
+    z-index: -1;
+    top: -136px;
+    content: '';
+    position: absolute;
+    background: url('../img/Line.png') no-repeat center center / cover;
+    display: block;
+    width: 410px;
+    height: 430px;
+}
+.third__block::before{
+    display: block;
+    content: '';
+    background: url('../img/tennis_ball.png') no-repeat center center / cover;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+    left: 380px;
+    top: -70px;
+}
